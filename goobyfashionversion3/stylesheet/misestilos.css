@@ -21,6 +21,37 @@ img {
 	margin: 0 0 10px 0;
 }
 
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
 /* Section Inner */
 div.section-inner {
 	max-width: 1100px;
@@ -39,6 +70,25 @@ div.header {
 .centrado {
 	text-align:center;
 	}
+.centrado_blanco {
+	text-align:center;
+	color:#FFF;
+	}
+.fondo_cotizar{
+	background:url(../images/IMAGEN_cotizar.jpg);
+	background-repeat:no-repeat;
+	}	
+.fondo_contactenos{
+	background:url(../images/IMAGEN_CONTACTENOS.jpg);
+	background-repeat:no-repeat;
+	}
+.fondo_connosotros{
+	background:url(../images/IMAGEN_TRABAJECONNOSOTROS.jpg);
+	background-repeat:no-repeat;
+	}		
+.hacia_derecha{
+	text-align:right;
+	}	
 /*navigation*/
 /* Navigation */
 div.nav {
@@ -75,6 +125,7 @@ div.nav ul li a:visited {
 #main_menu li:hover ul{
 	display:block;
 }
+
 #main_menu > li:first-child{
 	background-color: #999;
 	color: white;
@@ -95,6 +146,11 @@ div.nav ul li a:visited {
 	transition: 0.5s ease;
 }
 	
+.hover:hover{
+	transition: 0.8s ease;
+	opacity:0.5;
+}
+
 /* Thirds */
 div.thirds {
 	padding-bottom: 50px;
@@ -107,6 +163,17 @@ div.one-third {
 }
 div.one-third-last {
 	margin: 0;
+}
+.position_rel2{
+	z-index:2;
+	position: relative;
+	float:right;
+	text-align: right;
+}
+.position_rel{
+	z-index:1;
+	position:relative;
+	padding:25px;
 }
 /* Main Column */
 div.main {
@@ -162,12 +229,24 @@ text-align:center;
 #texto{
 	color : #ffffff;
 	font-size:14px;
+	text-align: justify;
+	padding:1%;
 }
 
 #texto_blanco{
 	color : #ffffff;
-}
+	font-size:14px;
+	text-align: center;
+	padding:1%;
 
+}
+.texto_negro_center{
+	color:#000;
+	font-size:14px;
+	text-align: center;
+	padding:1%;
+
+	}
 .texto{
 	color : #ffffff;
 	font-size:14px;

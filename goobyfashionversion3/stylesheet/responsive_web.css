@@ -20,13 +20,13 @@ div.nav ul li {
 }
 
 @media screen and (max-width: 620px) {
-	div.nav ul li figure {
+	div.nav ul li figure fondo_contactenos {
 		width: 33%;
 	}
 }
 
 @media screen and (max-width: 500px) {
-	
+
 	div.nav ul li {
 		width: 50%;
 		font-size: 85%;
