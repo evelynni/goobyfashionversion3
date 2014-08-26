@@ -31,20 +31,6 @@ img {
   margin: 0;
   }
 
-.rslides li {
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
 .rslides img {
   display: block;
   height: auto;
@@ -164,31 +150,13 @@ div.one-third {
 div.one-third-last {
 	margin: 0;
 }
-.position_rel2{
-	z-index:2;
-	position: relative;
-	float:right;
-	text-align: right;
-}
-.position_rel{
-	z-index:1;
-	position:relative;
-	padding:25px;
-}
+
 /* Main Column */
 div.main {
 	width: 95%;
 	float: left;
 	margin-right: 5%;
 }
-.overflow{
-	max-width:500px; 
-	height:350px; 
-	overflow:auto; 
-	padding:1%; 
-	text-align:justify;
-}
-
 /* pie de pagina */
 div.footer {
 	background-color: #3f3f3f;
