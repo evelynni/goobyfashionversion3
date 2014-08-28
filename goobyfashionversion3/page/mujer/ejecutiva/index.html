@@ -9,19 +9,49 @@
     <link rel="shortcut icon" href="../../../images/ico.jpg">
 	<link rel="stylesheet" href="../../../stylesheet/responsive_web.css" media="screen and (max-width: 900px)">
 	<link rel="stylesheet" href="../../../stylesheet/misestilos.css">
-</head>
+    
+    <script src="../../../stylesheet/jquery.js"></script>
+	<script src="../../../stylesheet/responsiveslides.js"></script>
+    <script>
+		$(function() {
+			$(".rslides").responsiveSlides({
+			nav: false,
+			pager: false,
+			speed: 50,
+			});
+		});
+	</script>
 
+</head>
+   <!-- $(".rslides").responsiveSlides({        OPCIONES
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});-->
 <body>
 	<!-- header -->
 <div class="header"><div class="section-inner">
-	<div class="hacia_derecha"><img src="../../../images/logogoobyfashion.jpg" width="188" height="97" alt="img"></div>
+	<div class="hacia_derecha"><img src="../../../images/logogoobyfashion.jpg" width="188" height="97" alt="logo"></div>
 		<div class="centrado"><figure></figure></div>
 </div></div><!--/header-->
 
  	<div class="nav"><div class="section-inner"> <!--enlaces navigation-->
-		<ul id="main_menu" class="clearfix">
+		<ul class="clearfix">
 			<li>
-            	<a href="../../../index.html">
+            	<a href="../../../page/index.html">
                 <h5>Inicio</h5>
             	</a>
 			</li>
@@ -54,19 +84,22 @@
 	</div></div>
  
  <p></p>
-<div class="centrado">	
-  <section class="nav one-third">
-	      <a href="../../../page/productos.html"><figure><img class="hover" src="../../../images/IMAGEN_FONDO.jpg"></figure></a>
-	  </article>
-  </section>
- </div>
  
+ 
+ <section class="nav one-third mobile-collapse">
+        <ul class="rslides">
+			<li><a href="../../../page/productos.html"><img class="hover" src="../../../images/IMAGEN_FONDO.jpg" alt="img"></a></li>
+			<li><a href="../../../page/productos.html"><img class="hover" src="../../../images/IMAGEN_FONDO2.jpg" alt="img"></a></li>
+			<li><a href="../../../page/productos.html"><img class="hover" src="../../../images/IMAGEN_FONDO3.jpg" alt="img"></a></li>
+        </ul>
+ </section> 
+
  <!--footer-->
   <footer>
  	<div class="nav"><div class="section-inner"> <!--enlaces navigation-->
-		<ul id="main_menu" class="clearfix">
+		<ul class="clearfix">
 			<li>
-            	<a href="../../../index">
+            	<a href="../../../page/index.html">
                 <h5>Inicio</h5>
             	</a>
 			</li>
@@ -99,20 +132,18 @@
 	</div></div>
 	 <div><section>
 	    <article>
- 			<div align="center" > <a id="texto"> siguenos en: </a> </div>		   
-				<div align="center" > 
+ 			<div class="centrado"> <a id="texto"> siguenos en: </a> </div>		   
+				<div class="centrado"> 
                 <figure >
-		 	       	<a href="../../page/contactenos.html"><img src="../../images/correo-logo-01.png"width="40"height="35"></a>
-				    <a href="https://www.facebook.com/gooby.uniformes?fref=ts" target="_new"><img src="../../images/face-logo-01.png"width="40"height="35"></a>
-			    	<a href="https://twitter.com/goobyfashion?lang=es" target="_new"><img src="../../images/twitter-logo-01.png"width="40"height="35"></a>
-					<a href="https://www.youtube.com/user/GoobyFashion" target="_new"><img src="../../images/LOGO-YOUTUBE.png"width="40"height="35"></a>
+		 	       	<a href="../../../page/contactenos.html"><img src="../../../images/correo-logo-01.png" width="40" height="35" alt="correo"></a>
+				    <a href="https://www.facebook.com/gooby.uniformes?fref=ts" target="new"><img src="../../../images/face-logo-01.png" width="40" height="35" alt="face"></a>
+			    	<a href="https://twitter.com/goobyfashion?lang=es" target="new"><img src="../../../images/twitter-logo-01.png" width="40" height="35" alt="twitter"></a>
+					<a href="https://www.youtube.com/user/GoobyFashion" target="new"><img src="../../../images/LOGO-YOUTUBE.png" width="40" height="35" alt="youtube"></a>
 		        </figure>
 				</div> 
 		</article>
     </section></div>
-	<footer>
-	   <div align="center" > <p id="texto"> 2014-GOOBY-FASHION-OnLine. @2014 all rights reserved @ </p> </div>
-	</footer>
+	   <div class="centrado"> <p class="texto"> 2014-GOOBY-FASHION-OnLine. @2014 all rights reserved @ </p> </div>
     </footer>
     <!--/footer-->
        
