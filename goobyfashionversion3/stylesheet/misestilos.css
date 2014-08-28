@@ -193,12 +193,25 @@ font: bold 15px verdana, sans-serif;
 width:100px;
 text-align:center;
 }
+.texto{
+	color : #ffffff;
+	font-size:14px;
+	text-align: justify;
+	padding:1%;
 
+	}
 #texto{
 	color : #ffffff;
 	font-size:14px;
 	text-align: justify;
 	padding:1%;
+}
+.texto_blanco{
+	color : #ffffff;
+	font-size:14px;
+	text-align: center;
+	padding:1%;
+
 }
 
 #texto_blanco{
